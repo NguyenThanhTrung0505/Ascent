@@ -4,7 +4,7 @@
     color: $color;
 }
 
-@mixin styleBtn($bg, $color, $radius, $bgHover, $bgColor) {
+@mixin styleBtn($bg, $color, $radius, $bgHover, $colorHover) {
     background-color: $bg;
     color: $color;
     border-radius: $radius;
@@ -23,7 +23,7 @@
         width: 0;
         height: 100%;
         background-color: $bgHover;
-        color: $bgColor;
+        color: $colorHover;
         transition: all 0.8s ease;
         z-index: -1;
     }
