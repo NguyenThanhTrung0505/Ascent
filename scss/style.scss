@@ -1,0 +1,71 @@
+// import file scss
+@import "./theme/component";
+@import "./theme/mixin";
+@import "./theme/variable";
+
+// GLOBAL (write code css for all page)
+.container {
+    width: 85vw;
+    margin: 0 auto;
+}
+body {
+    font-family:
+        ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+// HEADER
+header {
+}
+
+// BANNER
+.banner {
+}
+
+// COUNTER
+.counter {
+}
+
+// ABOUT
+.about {
+}
+
+// PROGRAMS
+.programs {
+}
+
+// PORTFOLIO
+.portfolio {
+}
+
+// SERVICE
+.service {
+}
+
+// FAQ
+.faq {
+}
+
+// TEAM
+.team {
+}
+
+// STUDENT
+.student {
+}
+
+// TESTIMONIAL
+.testimonial {
+}
+
+// BLOG
+.blog {
+}
+
+// CONNECTED
+.connected {
+}
+
+// FOOTER
+footer {
+}
