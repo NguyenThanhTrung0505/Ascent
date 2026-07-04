@@ -5,15 +5,26 @@
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        <!-- Bubblegum Sans -->
+        <!-- Font text -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Jost:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
             rel="stylesheet"
         />
-
+        <!-- Font Awesome 6 CDN -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- Animate -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
         <!-- Bootstrap CSS v5.3.8 -->
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -28,17 +39,327 @@
     <body>
         <!-- HEADER -->
         <header>
-            <div class="container"></div>
+            <div class="header-top">
+                <div class="container d-flex justify-content-between px-4">
+                    <div class="header-info">
+                        <a href="">(629) 555-0129</a>
+                        <a href="">info@example.com</a>
+                        <p>6391 Elgin St. Celina, 10299</p>
+                    </div>
+                    <div class="header-icon">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <i class="fa-solid fa-square"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href=""
+                                    ><i class="fa-solid fa-square"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a href=""
+                                    ><i class="fa-solid fa-square"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a href=""
+                                    ><i class="fa-solid fa-square"></i
+                                ></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div
+                    class="container d-flex justify-content-between align-items-center py-4"
+                >
+                    <a href="" class="header-brand d-flex gap-1">
+                        <img
+                            src="./img/logo.png"
+                            alt=""
+                            width="40px"
+                            height="40px"
+                        />
+                        <p>Ascent</p>
+                    </a>
+                    <div class="header-nav">
+                        <nav class="navbar navbar-expand-lg">
+                            <div class="container-fluid">
+                                <div
+                                    class="collapse navbar-collapse"
+                                    id="navbarScroll"
+                                >
+                                    <ul
+                                        class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll gap-2"
+                                        style="--bs-scroll-height: 100px"
+                                    >
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link active"
+                                                aria-current="page"
+                                                href="#"
+                                                >Home</a
+                                            >
+                                            <ul class="nav-menu">
+                                                <li>
+                                                    <a
+                                                        href=""
+                                                        class="menu-item"
+                                                    >
+                                                        Home-1
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href=""
+                                                        class="menu-item"
+                                                    >
+                                                        Home-2
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link active"
+                                                aria-current="page"
+                                                href="#"
+                                                >About Us</a
+                                            >
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link active"
+                                                aria-current="page"
+                                                href="#"
+                                                >Services</a
+                                            >
+                                            <ul class="nav-menu">
+                                                <li>
+                                                    <a
+                                                        href=""
+                                                        class="menu-item"
+                                                    >
+                                                        Services
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href=""
+                                                        class="menu-item"
+                                                    >
+                                                        Service Details
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link active"
+                                                aria-current="page"
+                                                href="#"
+                                                >Blog</a
+                                            >
+                                            <ul class="nav-menu">
+                                                <li>
+                                                    <a
+                                                        href=""
+                                                        class="menu-item"
+                                                    >
+                                                        Blog
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href=""
+                                                        class="menu-item"
+                                                    >
+                                                        Blog Details
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link active"
+                                                aria-current="page"
+                                                href="#"
+                                                >Page</a
+                                            >
+                                            <ul class="nav-menu">
+                                                <li>
+                                                    <a
+                                                        href=""
+                                                        class="menu-item"
+                                                    >
+                                                        About
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href=""
+                                                        class="menu-item"
+                                                    >
+                                                        Services
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href=""
+                                                        class="menu-item"
+                                                    >
+                                                        Service Details
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href=""
+                                                        class="menu-item"
+                                                    >
+                                                        Faq
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href=""
+                                                        class="menu-item"
+                                                    >
+                                                        Portfolio
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href=""
+                                                        class="menu-item"
+                                                    >
+                                                        Contact
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link active"
+                                                aria-current="page"
+                                                href="#"
+                                                >Contact Us</a
+                                            >
+                                        </li>
+                                    </ul>
+                                    <a href="" class="btn btn-header">
+                                        Get A Quote
+                                    </a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
         </header>
 
         <!-- BANNER -->
-        <section class="banner">
-            <div class="container"></div>
+        <section class="banner position-relative">
+            <div class="container">
+                <div
+                    class="banner-img-circle position-absolute d-flex flex-column"
+                >
+                    <img src="./img/shapes/left-circle-1.png" alt="" />
+                    <img src="./img/shapes/left-circle-2.png" alt="" />
+                </div>
+                <div
+                    class="banner-content d-flex flex-wrap justify-content-between gap-4 pt-5"
+                >
+                    <div class="banner-content-left-pic">
+                        <img src="./img/about/boy_img_1.png" alt="" />
+                    </div>
+                    <div
+                        class="banner-text d-flex flex-column gap-2 align-items-center me-5 justify-content-start"
+                    >
+                        <h1 class="text-center">
+                            <img src="./img/shapes/shap-1.png" alt="" />
+                            <span>Exploring Minds</span>
+                            <br />
+                            <span>Elementary</span>
+                            <span>School</span>
+                        </h1>
+                        <p class="text-center">
+                            Starting a corporate business typically involves
+                            <br />
+                            several steps, such as develo a business
+                        </p>
+                        <a href="" class="text-decoration-none">Learn More</a>
+                    </div>
+                    <div
+                        class="banner-content-three-start d-flex align-items-center"
+                    >
+                        <img
+                            src="./img/shapes/shap.png"
+                            alt=""
+                            width="auto"
+                            height="50px"
+                        />
+                        <img
+                            src="./img/shapes/shap.png"
+                            alt=""
+                            width="auto"
+                            height="60px"
+                        />
+                        <img
+                            src="./img/shapes/shap.png"
+                            alt=""
+                            width="auto"
+                            height="30px"
+                        />
+                    </div>
+                    <img
+                        src="./img/shapes/painting.png"
+                        alt=""
+                        width="auto"
+                        height="100%"
+                    />
+                    <div class="banner-content-right-boy">
+                        <img src="./img/about/boy_img_2.png" alt="" />
+                    </div>
+                </div>
+                <div class="banner-right-circle">
+                    <img src="./img/shapes/right-circle.png" alt="" />
+                </div>
+            </div>
         </section>
 
         <!-- COUNTER -->
         <section class="counter">
-            <div class="container"></div>
+            <div class="container">
+                <div class="counter-content">
+                    <div class="left-content">
+                        <p>Number Talks</p>
+                        <h2>
+                            Invest in education invest <br />
+                            in the future
+                        </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur. Amet lectus
+                            mi ultricies dictum facilisis sem. Imperdiet massa
+                            turpis sit proin metus volutpat loren ipsum Lorem
+                            ipsum dolor sit amet consectetur. Amet lectus mi
+                            ultricies dictum
+                        </p>
+                        <button>Get a quote</button>
+                    </div>
+                    <div class="right-content">
+                        <div class="card">
+                            <div>
+                                <i class="fa-light fa-building"></i>
+                            </div>
+                            <h3>20K</h3>
+                            <p>Running Students</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- ABOUT -->
@@ -103,5 +424,15 @@
             integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
             crossorigin="anonymous"
         ></script>
+        <!-- Wow -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+            integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script>
+            new WOW().init();
+        </script>
     </body>
 </html>

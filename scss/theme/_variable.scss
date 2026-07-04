@@ -39,9 +39,13 @@ $fs-xxxl: 70px;
 
 // Font weight
 $fw-300: 300;
-$fw-300: 400; // this fw is normal text
-$fw-300: 500;
-$fw-300: 600;
-$fw-300: 700;
-$fw-300: 800;
-$fw-300: 900;
+$fw-400: 400; // this fw is normal text
+$fw-500: 500;
+$fw-600: 600;
+$fw-700: 700;
+$fw-800: 800;
+$fw-900: 900;
+
+// font family
+$ff-jost: "Jost", sans-serif;
+$ff-bubblegum: "Bubblegum Sans", sans-serif;
