@@ -27,6 +27,19 @@ body {
         20px 30px
     );
 }
+.header-title-h2 {
+    font-size: $fs-xxl;
+    font-weight: $fw-700;
+    font-family: $ff-jost;
+}
+.header-title-p {
+    font-family: $ff-bubblegum;
+    font-size: $fs-sm;
+    margin: 0;
+}
+.p {
+    color: $text-foreground;
+}
 // HEADER
 header {
     .header-top {
@@ -99,8 +112,10 @@ header {
             ul {
                 li {
                     @include styleText($fs-xs, $fw-600, $muted);
+                    background-color: $text-color-white;
                     font-family: $ff-jost;
                     position: relative;
+                    z-index: 10;
                     a {
                         transition: all 0.8s;
                     }
@@ -171,7 +186,7 @@ header {
 .banner {
     background-color: $bg-warm;
     padding-top: 4rem;
-    height: 97vh;
+    height: fit-content;
     .banner-img-circle {
         content: "";
         left: 0;
@@ -268,7 +283,7 @@ header {
         }
         .banner-content-right-boy {
             position: relative;
-            top: -120px;
+            margin-top: -120px;
             animation: bottomToTop 4s linear infinite;
             img {
                 position: relative;
@@ -278,10 +293,10 @@ header {
             &::after {
                 position: absolute;
                 content: "";
-                top: 0;
+                top: 3px;
                 left: 0;
                 width: 100%;
-                height: 100%;
+                height: 84%;
                 z-index: 2;
                 border: 2px solid $bg-blue;
                 border-radius: 125px;
@@ -299,14 +314,263 @@ header {
 
 // COUNTER
 .counter {
+    .counter-content {
+        gap: 3rem;
+        .left-content {
+            width: 50%;
+            padding-right: 3rem;
+            p {
+                &:first-of-type {
+                    font-family: $ff-bubblegum;
+                    color: $text-color-orange;
+                    font-size: $fs-sm;
+                    margin: 0;
+                }
+                &:last-of-type {
+                    color: $text-foreground;
+                }
+            }
+            h2 {
+                font-size: $fs-xxl;
+                font-weight: $fw-700;
+                font-family: $ff-jost;
+            }
+            button {
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                @include styleBtn(
+                    $text-color-white,
+                    $muted,
+                    5px,
+                    $bg-blue,
+                    $text-color-white,
+                    18px 30px
+                );
+            }
+        }
+        .right-content {
+            padding: 5rem 0;
+            width: 50%;
+            .card {
+                border: 1px solid rgba(0, 0, 0, 0.1);
+
+                width: 48%;
+                height: 45%;
+                flex-direction: row;
+                align-items: center;
+                justify-content: start;
+                padding: 1.5rem;
+                .card-icon {
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    color: $text-color-white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 1rem;
+                    i {
+                        font-size: 40px;
+                    }
+                }
+                .card-icon1 {
+                    background-color: $bg-primary;
+                }
+                .card-icon2 {
+                    background-color: $bg-red;
+                }
+                .card-icon3 {
+                    background-color: $bg-green;
+                }
+                .card-icon4 {
+                    background-color: $bg-blue;
+                }
+                .card-content {
+                    padding-right: 1rem;
+                    h3 {
+                        font-size: $fs-xxl;
+                        font-weight: $fw-700;
+                        font-family: $ff-jost;
+                        margin: 0;
+                    }
+                    p {
+                        color: $text-foreground;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
 }
 
 // ABOUT
 .about {
+    .about-content {
+        .content-left {
+            .img {
+                position: relative;
+                img {
+                    &:first-of-type {
+                        position: absolute;
+                        content: "";
+                        top: -40px;
+                        left: -40px;
+                    }
+                }
+            }
+            .list-card {
+                .card {
+                    &:first-of-type {
+                        border-radius: 10px;
+                        border: none;
+                        background-color: $bg-warm;
+                        padding: 1.5rem 0.5rem;
+                        h3 {
+                            font-size: $fs-md;
+                            font-family: $ff-jost;
+                            font-weight: $fw-700;
+                            margin: 0;
+                        }
+                        p {
+                            margin: 0;
+                            color: $text-foreground;
+                        }
+                    }
+                    &:last-of-type {
+                        height: fit-content;
+                        border-radius: 10px;
+                        border: none;
+                        background-color: #fff;
+                        padding: 1rem;
+                        box-shadow:
+                            3px 3px 15px rgba(0, 0, 0, 0.05),
+                            -3px -3px 10px rgba(0, 0, 0, 0.05);
+                        h3 {
+                            font-size: $fs-xxl;
+                            font-family: $ff-jost;
+                            font-weight: $fw-700;
+                            color: $text-color-blue;
+                            margin: 0;
+                        }
+                        p {
+                            margin: 0;
+                            color: $text-foreground;
+                        }
+                    }
+                }
+            }
+        }
+        .content-right {
+            padding-right: 5rem;
+            p {
+                &:first-of-type {
+                    color: $text-color-blue;
+                }
+            }
+            button {
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                @include styleBtn(
+                    $text-color-white,
+                    $muted,
+                    5px,
+                    $bg-blue,
+                    $text-color-white,
+                    18px 30px
+                );
+            }
+        }
+    }
 }
-
 // PROGRAMS
 .programs {
+    .programs-content {
+        .title {
+            text-align: center;
+            p {
+                color: $text-color-green;
+            }
+        }
+        .list-card {
+            padding-top: 4rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            row-gap: 2rem;
+            column-gap: 4rem;
+            img {
+                animation: rightToLeft 3s linear infinite;
+                top: 50px;
+                right: 40px;
+            }
+            .card {
+                border-radius: 10px;
+                position: relative;
+                padding: 2.5rem;
+                border: 2px solid rgba(0, 0, 0, 0.05);
+                transition: all 0.5s;
+                .left-card {
+                    transition: all 0.5s;
+
+                    position: absolute;
+                    content: "";
+                    border: 1px solid rgba(0, 0, 0, 0.08);
+                    color: $text-color-green;
+                    top: 30%;
+                    left: -7%;
+                    background-color: #fff;
+                    width: 88px;
+                    height: 88px;
+                    padding: 10px;
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    i {
+                        font-size: 50px;
+                    }
+                }
+                .right-card {
+                    transition: all 0.5s;
+                    padding-left: 2.75rem;
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        &:first-of-type {
+                            font-size: $fs-lg;
+                            font-weight: $fw-600;
+                            font-family: $ff-jost;
+                        }
+                        &:last-of-type {
+                            transition: all 0.5s;
+                            margin: 0;
+                            &:hover {
+                                color: $text-color-green;
+                            }
+                        }
+                    }
+                    p {
+                        padding: 10px 0;
+                    }
+                }
+                &:hover {
+                    border: 2px solid transparent;
+                    box-shadow:
+                        3px 3px 20px rgba(0, 0, 0, 0.05),
+                        -3px -3px 20px rgba(0, 0, 0, 0.05);
+                    .left-card {
+                        background-color: $bg-green;
+                        color: $text-color-white;
+                    }
+                    .right-card {
+                        a {
+                            &:first-of-type {
+                                color: $text-color-green;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 // PORTFOLIO
@@ -378,5 +642,17 @@ footer {
     }
     100% {
         transform: rotate(-3deg);
+    }
+}
+
+@keyframes rightToLeft {
+    0% {
+        transform: translateX(-10px);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(-10px);
     }
 }
