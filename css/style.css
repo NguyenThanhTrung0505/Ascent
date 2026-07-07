@@ -659,9 +659,6 @@ header .header-bottom .header-nav .btn-header {
 }
 .portfolio .portfolio-content .tab .tab-content .active {
   display: grid;
-  grid-template-columns: 4fr 4fr 1fr 3fr;
-  grid-template-rows: repeat(2, 1fr);
-  gap: 2rem;
 }
 .portfolio .portfolio-content .tab .tab-content .active div {
   width: 100%;
@@ -674,15 +671,6 @@ header .header-bottom .header-nav .btn-header {
   height: 100%;
   width: 100%;
   object-fit: cover;
-}
-.portfolio .portfolio-content .tab .tab-content .active div:first-of-type {
-  grid-row: 1/3;
-}
-.portfolio .portfolio-content .tab .tab-content .active div:nth-of-type(2) {
-  grid-column: 2/4;
-}
-.portfolio .portfolio-content .tab .tab-content .active div:last-of-type {
-  grid-column: 3/5;
 }
 .portfolio .portfolio-content .tab .tab-content .active div:hover .card-text {
   opacity: 0.8;
@@ -725,6 +713,54 @@ header .header-bottom .header-nav .btn-header {
   bottom: -20px;
   left: 50%;
   transform: translateX(-50%);
+}
+.portfolio .portfolio-content .tab .tab-content #nav-education,
+.portfolio .portfolio-content .tab .tab-content #nav-coaching {
+  grid-template-columns: 4fr 4fr 1fr 3fr;
+  grid-template-rows: repeat(2, 310px);
+  gap: 2rem;
+}
+.portfolio .portfolio-content .tab .tab-content #nav-education div:first-of-type,
+.portfolio .portfolio-content .tab .tab-content #nav-coaching div:first-of-type {
+  grid-row: 1/3;
+}
+.portfolio .portfolio-content .tab .tab-content #nav-education div:nth-of-type(2),
+.portfolio .portfolio-content .tab .tab-content #nav-coaching div:nth-of-type(2) {
+  grid-column: 2/4;
+}
+.portfolio .portfolio-content .tab .tab-content #nav-education div:last-of-type,
+.portfolio .portfolio-content .tab .tab-content #nav-coaching div:last-of-type {
+  grid-column: 3/5;
+}
+.portfolio .portfolio-content .tab .tab-content #nav-school {
+  grid-template-columns: 6fr 1fr 5fr;
+  grid-template-rows: repeat(2, 450px);
+  gap: 2rem;
+}
+.portfolio .portfolio-content .tab .tab-content #nav-school div img {
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.portfolio .portfolio-content .tab .tab-content #nav-school div:first-of-type {
+  grid-column: 1/3;
+}
+.portfolio .portfolio-content .tab .tab-content #nav-school div:last-of-type {
+  grid-column: 2/4;
+}
+.portfolio .portfolio-content .tab .tab-content #nav-learn {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, 450px);
+  gap: 2rem;
+}
+.portfolio .portfolio-content .tab .tab-content #nav-child {
+  grid-template-columns: 5fr 2fr 5fr;
+  grid-template-rows: repeat(2, 450px);
+  gap: 2rem;
+}
+.portfolio .portfolio-content .tab .tab-content #nav-child div:first-of-type {
+  grid-column: 1/3;
 }
 
 @keyframes leftToRight {
