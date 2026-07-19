@@ -139,8 +139,9 @@ header .header-top .header-icon ul a:hover i {
   z-index: 2;
 }
 header .header-bottom {
+  position: relative;
   transition: transform 0.3s ease-in-out;
-  z-index: 10;
+  z-index: 99;
   background-color: #ffffff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   width: 100%;
@@ -173,6 +174,8 @@ header .header-bottom .header-nav ul li {
 }
 header .header-bottom .header-nav ul li a {
   transition: all 0.8s;
+  padding-bottom: 15px;
+  padding-top: 15px;
 }
 header .header-bottom .header-nav ul li ul {
   transition: all 0.8s;
@@ -206,8 +209,9 @@ header .header-bottom .header-nav ul li:hover a {
 header .header-bottom .header-nav ul li:hover ul {
   visibility: visible;
   opacity: 1;
-  top: 120%;
+  top: 110%;
   left: 10%;
+  z-index: 100;
 }
 header .header-bottom .header-nav ul li:hover ul li {
   transition: all 0.5s;
