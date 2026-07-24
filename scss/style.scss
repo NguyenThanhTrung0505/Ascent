@@ -9,10 +9,11 @@
     margin: 0 auto;
 }
 body {
-    font-family:
-        ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
-        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
+
 
 // HEADER
 header {
@@ -43,7 +44,100 @@ header {
 }
 
 // FAQ
+/* ================= FAQ ================= */
+
 .faq {
+    padding: 100px 0;
+    background: $background;
+
+    .row {
+        align-items: center;
+    }
+
+    &__image {
+        text-align: center;
+
+        img {
+            width: 100%;
+            max-width: 560px;
+        }
+    }
+
+    &__content {
+        padding-left: 45px;
+        padding-top: 30px;
+    }
+
+    &__subtitle {
+        display: inline-block;
+        font-family: "Bubblegum Sans", sans-serif;
+        font-size: 20px;
+        color: $text-color-blue;
+    }
+
+    &__title {
+        margin-bottom: 40px;
+        font-family: "Jost", sans-serif;
+        font-size: 54px;
+        font-weight: 700;
+        line-height: 1.2;
+        color: #1a1a1a;
+    }
+
+    &__accordion {
+        .accordion-item {
+            margin-bottom: 20px;
+            border: 1px solid #ececec;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .05);
+        }
+
+        .accordion-button {
+            padding: 28px 30px;
+            background: #fff;
+            font-family: "Jost", sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: #1a1a1a;
+            box-shadow: none;
+        }
+
+        .accordion-button:focus {
+            box-shadow: none;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background: #fff;
+            color: #1a1a1a;
+        }
+
+        .accordion-body {
+            padding: 0 30px 28px;
+            font-family: "Nunito", sans-serif;
+            font-size: 17px;
+            line-height: 1.8;
+            color: #666;
+        }
+    }
+    
+}
+.faq__accordion {
+
+    .accordion-button::after {
+        content: "";
+        width: 42px;
+        height: 42px;
+        background: $bg-primary;
+        border-radius: 10px;
+        background-image: none;
+        flex-shrink: 0;
+    }
+
+    .accordion-button:not(.collapsed)::after {
+        content: "";
+        background: $bg-blue;
+    }
 }
 
 // TEAM
