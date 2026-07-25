@@ -18,13 +18,20 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
     <!-- Css -->
     <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    
+
 </head>
 
 <body>
     <!-- HEADER -->
     <header>
         <div class="container">
-            
+
         </div>
     </header>
 
@@ -62,125 +69,110 @@
 
     <!-- FAQ -->
     <section class="faq py-5">
-    <div class="container">
+        <div class="container">
 
-        <div class="row align-items-center">
+            <div class="row align-items-center">
 
-            <!-- Left -->
-            <div class="col-lg-6">
+                <!-- Left -->
+                <div class="col-lg-6">
 
-                <div class="faq__image">
+                    <div class="faq__image">
 
-                    <img
-                        src="./img/banner/banner-1.png"
-                        alt="FAQ"
-                        class="img-fluid">
+                        <img src="./img/banner/banner-1.png" alt="FAQ" class="img-fluid">
+
+                    </div>
 
                 </div>
 
-            </div>
+                <!-- Right -->
+                <div class="col-lg-6">
 
-            <!-- Right -->
-            <div class="col-lg-6">
+                    <div class="faq__content">
 
-                <div class="faq__content">
+                        <span class="faq__subtitle bubblegum-sans">
+                            Some Faq
+                        </span>
 
-                    <span class="faq__subtitle bubblegum-sans">
-                        Some Faq
-                    </span>
+                        <h2 class="faq__title jost">
+                            Empowering Children Through Education Playful Mind
+                        </h2>
 
-                    <h2 class="faq__title jost">
-                        Empowering Children Through Education Playful Mind
-                    </h2>
+                        <div class="accordion faq__accordion" id="faqAccordion">
 
-                    <div class="accordion faq__accordion" id="faqAccordion">
+                            <div class="accordion-item">
 
-                        <div class="accordion-item">
+                                <h2 class="accordion-header">
 
-                            <h2 class="accordion-header">
+                                    <button class="accordion-button jost" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faqOne">
 
-                                <button
-                                    class="accordion-button jost"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#faqOne">
+                                        Why do we have to go to school?
 
-                                    Why do we have to go to school?
+                                    </button>
 
-                                </button>
+                                </h2>
 
-                            </h2>
+                                <div id="faqOne" class="accordion-collapse collapse show"
+                                    data-bs-parent="#faqAccordion">
 
-                            <div
-                                id="faqOne"
-                                class="accordion-collapse collapse show"
-                                data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
 
-                                <div class="accordion-body">
+                                        It is a long established fact that a reader will be distracted by the readable
+                                        content of a page when looking at its layout.
 
-                                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                                    </div>
 
                                 </div>
 
                             </div>
 
-                        </div>
+                            <div class="accordion-item">
 
-                        <div class="accordion-item">
+                                <h2 class="accordion-header">
 
-                            <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed jost" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faqTwo">
 
-                                <button
-                                    class="accordion-button collapsed jost"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#faqTwo">
+                                        Why do we have to go to school?
 
-                                    Why do we have to go to school?
+                                    </button>
 
-                                </button>
+                                </h2>
 
-                            </h2>
+                                <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
 
-                            <div
-                                id="faqTwo"
-                                class="accordion-collapse collapse"
-                                data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
 
-                                <div class="accordion-body">
+                                        It is a long established fact that a reader will be distracted by the readable
+                                        content.
 
-                                    It is a long established fact that a reader will be distracted by the readable content.
+                                    </div>
 
                                 </div>
 
                             </div>
 
-                        </div>
+                            <div class="accordion-item">
 
-                        <div class="accordion-item">
+                                <h2 class="accordion-header">
 
-                            <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed jost" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faqThree">
 
-                                <button
-                                    class="accordion-button collapsed jost"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#faqThree">
+                                        Why do we have to go to school?
 
-                                    Why do we have to go to school?
+                                    </button>
 
-                                </button>
+                                </h2>
 
-                            </h2>
+                                <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
 
-                            <div
-                                id="faqThree"
-                                class="accordion-collapse collapse"
-                                data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
 
-                                <div class="accordion-body">
+                                        It is a long established fact that a reader will be distracted by the readable
+                                        content.
 
-                                    It is a long established fact that a reader will be distracted by the readable content.
+                                    </div>
 
                                 </div>
 
@@ -195,24 +187,278 @@
             </div>
 
         </div>
-
-    </div>
-</section>
+    </section>
 
     <!-- TEAM -->
-    <section class="team">
-        <div class="container"></div>
+    <section class="team py-5">
+        <div class="container">
+
+            <div class="team__heading text-center mb-5">
+
+                <span class="team__tag">
+                    Meet Our Professional
+                </span>
+
+                <h2 class="team__title mt-3">
+                    Joyful Journeys Childcare and the <br>
+                    Of a Education
+                </h2>
+
+            </div>
+
+            <div class="row g-4 justify-content-center">
+
+                <!-- Team Item -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="team__item">
+
+                        <div class="team__img">
+                            <img src="./img/team/professonal1.png" class="img-fluid w-100" alt="">
+                        </div>
+
+                        <div class="team__content">
+
+                            <h4 class="team__name">
+                                Jane Cooper
+                            </h4>
+
+                            <p class="team__job">
+                                Marketing Coordinator
+                            </p>
+
+                            <div class="team__social">
+
+                                <div class="team__social">
+                                    <a href="#"></a>
+                                    <a href="#"></a>
+                                    <a href="#"></a>
+                                    <a href="#"></a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Team Item -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="team__item">
+
+                        <div class="team__img">
+                            <img src="./img/team/professonal2.png" class="img-fluid w-100" alt="">
+                        </div>
+
+                        <div class="team__content">
+
+                            <h4 class="team__name">
+                                Jane Cooper
+                            </h4>
+
+                            <p class="team__job">
+                                Marketing Coordinator
+                            </p>
+
+                            <div class="team__social">
+
+                                <div class="team__social">
+                                    <a href="#"></a>
+                                    <a href="#"></a>
+                                    <a href="#"></a>
+                                    <a href="#"></a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Team Item -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="team__item">
+
+                        <div class="team__img">
+                            <img src="./img/team/professonal3.png" class="img-fluid w-100" alt="">
+                        </div>
+
+                        <div class="team__content">
+
+                            <h4 class="team__name">
+                                Jane Cooper
+                            </h4>
+
+                            <p class="team__job">
+                                Marketing Coordinator
+                            </p>
+
+                            <div class="team__social">
+
+                                <div class="team__social">
+                                    <a href="#"></a>
+                                    <a href="#"></a>
+                                    <a href="#"></a>
+                                    <a href="#"></a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
     </section>
 
     <!-- STUDENT -->
-    <section class="student">
-        <div class="container"></div>
+    <section class="student py-5 position-relative">
+        <!-- Cây -->
+        <img src="./img/shapes/knowledge-lshpe.png" class="student-tree" alt="">
+
+        <!-- Rùa -->
+        <img src="./img/shapes/knowledge-animal.png" class="student-turtle " alt="">
+
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Left -->
+                <div class="col-lg-4">
+                    <span class="student-tag">
+                        Student knowledge
+                    </span>
+
+                    <h2 class="student-title mt-3">
+                        Knowledge for All learn
+                        design Excellence for
+                        Everyone
+                    </h2>
+
+                    <p class="student-desc mt-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        platea the osr of a proin mollis pretium facilisi in,
+                        ligula volutpat
+                    </p>
+
+                    <a href="#" class="btn student-btn mt-4">
+                        Learn More
+                    </a>
+                </div>
+
+                <!-- Right -->
+                <div class="col-lg-8">
+
+                    <div class="student-boxes">
+
+                        <div class="box big blue">
+                            1-2 <br> Years
+                        </div>
+
+                        <div class="box cyan">
+                            3-5 <br> Years
+                        </div>
+
+                        <div class="box pink">
+                            6-8 <br> Years
+                        </div>
+
+                        <div class="box orange">
+                            9-11 <br> Years
+                        </div>
+
+                        <div class="box orange">
+                            12-15 <br> Years
+                        </div>
+
+                        <div class="box green">
+                            16-18 <br> Years
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
     </section>
 
     <!-- TESTIMONIAL -->
-    <section class="testimonial">
-        <div class="container"></div>
-    </section>
+    <section class="testimonial py-5">
+    <div class="container">
+
+        <!-- Heading -->
+        <div class="row align-items-center mb-5">
+
+            <div class="col-lg-7">
+                <span class="testimonial__tag">
+                    Clients Testimonial
+                </span>
+
+                <h2 class="testimonial__title mt-3">
+                    Unlocking the Power of
+                    Wonderworks Child
+                </h2>
+            </div>
+
+            <div class="col-lg-5">
+                <p class="testimonial__desc">
+                    Use receiving accounts a number a currencies and get paid
+                    like a local. Use receiving accounts a number paid the
+                    most beautiful think.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Content -->
+        <div class="testimonial__content">
+
+            <!-- Background Image -->
+            <div class="testimonial__image">
+                <img src="./img/banner/bg-img.png" alt="Kids">
+            </div>
+
+            <!-- Card -->
+            <div class="testimonial__card animate__animated animate__fadeInRight">
+
+                <div class="testimonial__header">
+
+                    <div class="testimonial__profile">
+
+                        <img
+                            src="./img/testimonial/user-1.png"
+                            class="testimonial__avatar"
+                            alt="User">
+
+                        <div class="testimonial__info">
+                            <h4>Shakib Al Hasan</h4>
+                            <span>Marketing Manager</span>
+                        </div>
+
+                    </div>
+
+                    <img
+                        src="./img/testimonial/quotation.png"
+                        class="testimonial__quote"
+                        alt="Quote">
+
+                </div>
+
+                <p class="testimonial__text">
+                    Their product exceeded my expectations. The quality and
+                    attention to detail are outstanding and have become an
+                    essential part of our education experience.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
 
     <!-- BLOG -->
     <section class="blog">
