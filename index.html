@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="en" data-bs-theme="light">
     <head>
-        <title>Title</title>
+        <title>Ascent - Childcare & Kids School HTML Template</title>
+        <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -271,15 +272,15 @@
         <section class="banner position-relative">
             <div class="container">
                 <div
-                    class="banner-img-circle position-absolute d-flex flex-column"
+                    class="banner-img-circle position-absolute d-flex flex-column d-none d-xxl-block"
                 >
                     <img src="./img/shapes/left-circle-1.png" alt="" />
                     <img src="./img/shapes/left-circle-2.png" alt="" />
                 </div>
                 <div
-                    class="banner-content d-flex flex-wrap justify-content-between gap-4 pt-5"
+                    class="banner-content d-flex flex-wrap justify-content-between gap-4 pt-5 gap-xxl-4"
                 >
-                    <div class="banner-content-left-pic">
+                    <div class="banner-content-left-pic d-lg-block d-none">
                         <img src="./img/about/boy_img_1.png" alt="" />
                     </div>
                     <div
@@ -300,7 +301,7 @@
                         <a href="" class="text-decoration-none">Learn More</a>
                     </div>
                     <div
-                        class="banner-content-three-start d-flex align-items-center"
+                        class="banner-content-three-start d-flex align-items-center d-none d-xxl-block"
                     >
                         <img
                             src="./img/shapes/shap.png"
@@ -327,11 +328,11 @@
                         width="auto"
                         height="100%"
                     />
-                    <div class="banner-content-right-boy">
+                    <div class="banner-content-right-boy d-none d-xxl-block">
                         <img src="./img/about/boy_img_2.png" alt="" />
                     </div>
                 </div>
-                <div class="banner-right-circle">
+                <div class="banner-right-circle d-none d-xxl-block">
                     <img src="./img/shapes/right-circle.png" alt="" />
                 </div>
             </div>
@@ -340,8 +341,10 @@
         <!-- COUNTER -->
         <section class="counter">
             <div class="container">
-                <div class="counter-content d-flex py-5 my-4">
-                    <div class="left-content py-5">
+                <div
+                    class="counter-content d-flex py-5 my-4 flex-wrap flex-xxl-nowrap"
+                >
+                    <div class="left-content py-5 w-100 w-xxl-auto">
                         <p class="wow animate__fadeInUp">Number Talks</p>
                         <h2
                             class="wow animate__fadeInUp"
@@ -352,7 +355,7 @@
                             in the future
                         </h2>
                         <p
-                            class="mt-4 wow animate__fadeInUp"
+                            class="mt-4 wow animate__fadeInUp w-100 w-xxl-auto"
                             data-wow-delay=".3s"
                             data-wow-duration="2s"
                         >
@@ -365,7 +368,7 @@
                         <button class="mt-4">Get a quote</button>
                     </div>
                     <div
-                        class="right-content py-5 d-flex flex-wrap gap-4 wow animate__fadeInUp"
+                        class="right-content py-5 d-flex flex-wrap gap-4 wow animate__fadeInUp w-100 w-xxl-auto"
                         data-wow-delay=".3s"
                         data-wow-duration="2s"
                     >
@@ -413,7 +416,9 @@
         <!-- ABOUT -->
         <section class="about py-5">
             <div class="container">
-                <div class="about-content d-flex justify-content-between px-4">
+                <div
+                    class="about-content d-flex justify-content-between px-4 flex-wrap flex-xxl-nowrap"
+                >
                     <div class="content-left d-flex gap-4 align-items-end">
                         <div
                             class="img wow animate__fadeInUp"
@@ -1070,38 +1075,631 @@
         </section>
 
         <!-- FAQ -->
-        <section class="faq">
-            <div class="container"></div>
+        <section class="faq py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Left -->
+                    <div class="col-lg-6">
+                        <div class="faq__image">
+                            <img
+                                src="./img/banner/banner-1.png"
+                                alt="FAQ"
+                                class="img-fluid"
+                            />
+                        </div>
+                    </div>
+
+                    <!-- Right -->
+                    <div class="col-lg-6">
+                        <div class="faq__content">
+                            <span
+                                class="faq__subtitle bubblegum-sans wow animate__fadeInUp"
+                            >
+                                Some Faq
+                            </span>
+
+                            <h2
+                                class="faq__title jost wow animate__fadeInUp"
+                                data-wow-delay=".3s"
+                                data-wow-duration="2s"
+                            >
+                                Empowering Children Through Education Playful
+                                Mind
+                            </h2>
+
+                            <div
+                                class="accordion faq__accordion"
+                                id="faqAccordion"
+                            >
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button
+                                            class="accordion-button jost"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#faqOne"
+                                        >
+                                            Why do we have to go to school?
+                                        </button>
+                                    </h2>
+
+                                    <div
+                                        id="faqOne"
+                                        class="accordion-collapse collapse show"
+                                        data-bs-parent="#faqAccordion"
+                                    >
+                                        <div class="accordion-body">
+                                            It is a long established fact that a
+                                            reader will be distracted by the
+                                            readable content of a page when
+                                            looking at its layout.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button
+                                            class="accordion-button collapsed jost"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#faqTwo"
+                                        >
+                                            Why do we have to go to school?
+                                        </button>
+                                    </h2>
+
+                                    <div
+                                        id="faqTwo"
+                                        class="accordion-collapse collapse"
+                                        data-bs-parent="#faqAccordion"
+                                    >
+                                        <div class="accordion-body">
+                                            It is a long established fact that a
+                                            reader will be distracted by the
+                                            readable content.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button
+                                            class="accordion-button collapsed jost"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#faqThree"
+                                        >
+                                            Why do we have to go to school?
+                                        </button>
+                                    </h2>
+
+                                    <div
+                                        id="faqThree"
+                                        class="accordion-collapse collapse"
+                                        data-bs-parent="#faqAccordion"
+                                    >
+                                        <div class="accordion-body">
+                                            It is a long established fact that a
+                                            reader will be distracted by the
+                                            readable content.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- TEAM -->
-        <section class="team">
-            <div class="container"></div>
+        <section class="team py-5">
+            <div class="container">
+                <div class="team__heading text-center mb-5">
+                    <span class="team__tag wow animate__fadeInUp">
+                        Meet Our Professional
+                    </span>
+
+                    <h2
+                        class="team__title mt-3 wow animate__fadeInUp"
+                        data-wow-delay=".3s"
+                        data-wow-duration="2s"
+                    >
+                        Joyful Journeys Childcare and the <br />
+                        Of a Education
+                    </h2>
+                </div>
+
+                <div class="row g-4 justify-content-center">
+                    <!-- Team Item -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="team__item">
+                            <div class="team__img">
+                                <img
+                                    src="./img/team/professonal1.png"
+                                    class="img-fluid w-100"
+                                    alt=""
+                                />
+                            </div>
+
+                            <div class="team__content">
+                                <h4 class="team__name">Jane Cooper</h4>
+
+                                <p class="team__job">Marketing Coordinator</p>
+
+                                <div class="team__social">
+                                    <div class="team__social">
+                                        <a href="#"></a>
+                                        <a href="#"></a>
+                                        <a href="#"></a>
+                                        <a href="#"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Team Item -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="team__item">
+                            <div class="team__img">
+                                <img
+                                    src="./img/team/professonal2.png"
+                                    class="img-fluid w-100"
+                                    alt=""
+                                />
+                            </div>
+
+                            <div class="team__content">
+                                <h4 class="team__name">Jane Cooper</h4>
+
+                                <p class="team__job">Marketing Coordinator</p>
+
+                                <div class="team__social">
+                                    <div class="team__social">
+                                        <a href="#"></a>
+                                        <a href="#"></a>
+                                        <a href="#"></a>
+                                        <a href="#"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Team Item -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="team__item">
+                            <div class="team__img">
+                                <img
+                                    src="./img/team/professonal3.png"
+                                    class="img-fluid w-100"
+                                    alt=""
+                                />
+                            </div>
+
+                            <div class="team__content">
+                                <h4 class="team__name">Jane Cooper</h4>
+
+                                <p class="team__job">Marketing Coordinator</p>
+
+                                <div class="team__social">
+                                    <div class="team__social">
+                                        <a href="#"></a>
+                                        <a href="#"></a>
+                                        <a href="#"></a>
+                                        <a href="#"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- STUDENT -->
-        <section class="student">
-            <div class="container"></div>
+        <section class="student py-5 position-relative">
+            <!-- Cây -->
+            <img
+                src="./img/shapes/knowledge-lshpe.png"
+                class="student-tree"
+                alt=""
+            />
+
+            <!-- Rùa -->
+            <img
+                src="./img/shapes/knowledge-animal.png"
+                class="student-turtle"
+                alt=""
+            />
+
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Left -->
+                    <div class="col-lg-4">
+                        <span class="student-tag wow animate__fadeInUp">
+                            Student knowledge
+                        </span>
+
+                        <h2
+                            class="student-title mt-3 wow animate__fadeInUp"
+                            data-wow-delay=".3s"
+                            data-wow-duration="2s"
+                        >
+                            Knowledge for All learn design Excellence for
+                            Everyone
+                        </h2>
+
+                        <p
+                            class="student-desc mt-4 wow animate__fadeInUp"
+                            data-wow-delay=".35s"
+                            data-wow-duration="2s"
+                        >
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit platea the osr of a proin mollis pretium
+                            facilisi in, ligula volutpat
+                        </p>
+
+                        <a href="#" class="btn student-btn mt-4">
+                            Learn More
+                        </a>
+                    </div>
+
+                    <!-- Right -->
+                    <div class="col-lg-8">
+                        <div class="student-boxes">
+                            <div class="box big blue">
+                                1-2 <br />
+                                Years
+                            </div>
+
+                            <div class="box cyan">
+                                3-5 <br />
+                                Years
+                            </div>
+
+                            <div class="box pink">
+                                6-8 <br />
+                                Years
+                            </div>
+
+                            <div class="box orange">
+                                9-11 <br />
+                                Years
+                            </div>
+
+                            <div class="box orange">
+                                12-15 <br />
+                                Years
+                            </div>
+
+                            <div class="box green">
+                                16-18 <br />
+                                Years
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- TESTIMONIAL -->
-        <section class="testimonial">
-            <div class="container"></div>
+        <section class="testimonial py-5">
+            <div class="container">
+                <!-- Heading -->
+                <div class="row align-items-center mb-5">
+                    <div class="col-lg-7">
+                        <span class="testimonial__tag wow animate__fadeInUp">
+                            Clients Testimonial
+                        </span>
+
+                        <h2
+                            class="testimonial__title mt-3 wow animate__fadeInUp"
+                            data-wow-delay=".3s"
+                            data-wow-duration="2s"
+                        >
+                            Unlocking the Power of Wonderworks Child
+                        </h2>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <p class="testimonial__desc">
+                            Use receiving accounts a number a currencies and get
+                            paid like a local. Use receiving accounts a number
+                            paid the most beautiful think.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="testimonial__content">
+                    <div class="testimonial__image">
+                        <img src="./img/banner/bg-img.png" alt="Kids" />
+                    </div>
+
+                    <div class="testimonial__card">
+                        <div class="testimonial__header">
+                            <div class="testimonial__profile">
+                                <img
+                                    src="./img/testimonial/user-1.png"
+                                    class="testimonial__avatar"
+                                    alt="User"
+                                />
+
+                                <div class="testimonial__info">
+                                    <h4>Shakib Al Hasan</h4>
+                                    <span>Marketing Manager</span>
+                                </div>
+                            </div>
+
+                            <img
+                                src="./img/testimonial/quotation.png"
+                                class="testimonial__quote"
+                                alt="Quote"
+                            />
+                        </div>
+
+                        <p class="testimonial__text">
+                            Their product exceeded my expectations. The quality
+                            and attention to detail are outstanding and have
+                            become an essential part of our education
+                            experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- BLOG -->
         <section class="blog">
-            <div class="container"></div>
+            <div class="container">
+                <div class="blog__heading">
+                    <span class="blog__subtitle wow animate__fadeInUp"
+                        >Latest Blog And News</span
+                    >
+
+                    <h2
+                        class="blog__title animate__animated animate__fadeInUp animate__slow"
+                    >
+                        Wonderworks Child Development Center
+                        <br />
+                        Discovery Kids Preschool
+                    </h2>
+                </div>
+
+                <div class="row g-4">
+                    <!-- LEFT -->
+                    <div
+                        class="col-lg-7 animate__animated animate__fadeInUp animate__slow"
+                    >
+                        <article class="blog-card blog-card--horizontal mb-4">
+                            <div class="blog-card__image">
+                                <img src="./img/blog/blog-1.png" alt="" />
+                            </div>
+
+                            <div class="blog-card__content">
+                                <div class="blog-card__meta">
+                                    <span>October 19, 2023</span>
+                                    <span>By admin</span>
+                                </div>
+
+                                <h3 class="blog-card__title">
+                                    Empowering Children Through Education the a
+                                    Igniting
+                                </h3>
+
+                                <a href="#">Read More</a>
+                            </div>
+                        </article>
+
+                        <article class="blog-card blog-card--horizontal">
+                            <div class="blog-card__image">
+                                <img src="./img/blog/blog-2.png" alt="" />
+                            </div>
+
+                            <div class="blog-card__content">
+                                <div class="blog-card__meta">
+                                    <span>October 19, 2023</span>
+                                    <span>By admin</span>
+                                </div>
+
+                                <h3 class="blog-card__title">
+                                    Empowering Children Through Education the a
+                                    Igniting
+                                </h3>
+
+                                <a href="#">Read More</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- RIGHT -->
+                    <div class="col-lg-5">
+                        <article
+                            class="blog-card blog-card--vertical animate__animated animate__fadeInUp animate__slow"
+                        >
+                            <div class="blog-card__image">
+                                <img src="./img/blog/blog-3.png" alt="" />
+                            </div>
+
+                            <div class="blog-card__content">
+                                <div class="blog-card__meta">
+                                    <span>October 19, 2023</span>
+                                    <span>By admin</span>
+                                </div>
+
+                                <h3 class="blog-card__title">
+                                    Empowering Children Through Education the a
+                                    Igniting
+                                </h3>
+
+                                <a href="#">Read More</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- CONNECTED -->
         <section class="connected">
-            <div class="container"></div>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="connected__image">
+                            <div class="connected__shape"></div>
+
+                            <img
+                                src="./img/about/student.png"
+                                alt="Kid"
+                                class="img-fluid"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="connected__content">
+                            <span
+                                class="connected__subtitle wow animate__fadeInUp"
+                            >
+                                Get Connected
+                            </span>
+
+                            <h2
+                                class="connected__title wow animate__fadeInUp"
+                                data-wow-delay=".3s"
+                                data-wow-duration="2s"
+                            >
+                                Education That Sparks Imagination Nurturing
+                                Curiosity Inspire
+                            </h2>
+
+                            <form class="connected__form">
+                                <input
+                                    type="email"
+                                    placeholder="Enter Your Email"
+                                />
+
+                                <button type="submit">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <img
+                src="./img/banner/bg-img (1).png"
+                alt=""
+                class="connected__grass"
+            />
         </section>
 
         <!-- FOOTER -->
-        <footer>
-            <div class="container"></div>
+        <footer class="footer">
+            <div class="container">
+                <div class="row gy-5">
+                    <!-- Logo -->
+                    <div
+                        class="col-lg-5 col-md-6 wow animate__fadeInUp"
+                        data-wow-delay=".3s"
+                        data-wow-duration="2s"
+                    >
+                        <div class="footer__logo">
+                            <img src="./img/logo.png" alt="" />
+                            <span>Asent</span>
+                        </div>
+
+                        <p class="footer__desc">
+                            Yes, there are many notable corporate businesses
+                            worldwide providing quality education.
+                        </p>
+
+                        <div class="footer__social">
+                            <a href="#"></a>
+
+                            <a href="#"></a>
+
+                            <a href="#"></a>
+
+                            <a href="#"></a>
+                        </div>
+                    </div>
+
+                    <!-- Pages -->
+                    <div
+                        class="col-lg-3 col-md-6 wow animate__fadeInUp"
+                        data-wow-delay=".3s"
+                        data-wow-duration="2s"
+                    >
+                        <h4 class="footer__title">Pages</h4>
+
+                        <ul class="footer__menu">
+                            <li><a href="#">About Us</a></li>
+
+                            <li><a href="#">Latest Service</a></li>
+
+                            <li><a href="#">Latest Blog And News</a></li>
+
+                            <li><a href="#">FAQ</a></li>
+
+                            <li><a href="#">Our Creative Team Member</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact -->
+                    <div
+                        class="col-lg-4 wow animate__fadeInUp"
+                        data-wow-delay=".3s"
+                        data-wow-duration="2s"
+                    >
+                        <h4 class="footer__title">Contact</h4>
+
+                        <ul class="footer__contact">
+                            <li>
+                                <span></span>
+
+                                <p>1179 KFC Road, Lisbon, Portugal</p>
+                            </li>
+
+                            <li>
+                                <span></span>
+
+                                <p>Sakib23@gmail.com</p>
+                            </li>
+
+                            <li>
+                                <span></span>
+
+                                <p>012547892354</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__bottom">
+                    <p
+                        class="wow animate__fadeInLeft"
+                        data-wow-delay=".3s"
+                        data-wow-duration="2s"
+                    >
+                        © Yoursitename 2024 | All Rights Reserved
+                    </p>
+
+                    <div
+                        class="footer__links wow animate__fadeInRight"
+                        data-wow-delay=".3s"
+                        data-wow-duration="2s"
+                    >
+                        <a href="#">Terms & Condition</a>
+
+                        <a href="#">Privacy Policy</a>
+
+                        <a href="#">Contact Us</a>
+                    </div>
+                </div>
+            </div>
         </footer>
 
         <!-- SCRIPT -->
